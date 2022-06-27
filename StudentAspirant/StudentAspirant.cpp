@@ -56,13 +56,18 @@ public:
 		cout << "--------------\n\n";
 	}
 };
-void main() {
+int main() {
 	//создание объекта
 	Aspirant Andrew("Industrial Design", false, 25, 6);
 	Andrew.Show();
+
+	Andrew.ChangeAge(30);
+	Andrew.ChangeCourse(3);
 
 	cout << "Aspirant Age: " << Andrew.GetAge() << endl;
 	cout << "Asporant Course: " << Andrew.GetCourse() << endl;
 	cout << "Aspirant Major: " << Andrew.GetMajor() << endl;
 	cout << "Aspirant Paid Tuition: " << Andrew.GetPaidTuition() << endl;
+
+	return 0;
 }
